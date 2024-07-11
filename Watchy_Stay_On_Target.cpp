@@ -16,6 +16,7 @@ void WatchyStayOnTarget::drawWatchFace(){
     //drawSteps();
     drawWeather();
     drawBattery();
+    display.drawBitmap(20, 150, rebellogo, 30, 30, DARKMODE ? GxEPD_WHITE : GxEPD_BLACK);
     display.drawBitmap(128, 7, WIFI_CONFIGURED ? wifi : wifioff, 26, 18, DARKMODE ? GxEPD_WHITE : GxEPD_BLACK);
     if(BLE_CONFIGURED){
      //   display.drawBitmap(100, 75, bluetooth, 13, 21, DARKMODE ? GxEPD_WHITE : GxEPD_BLACK);
